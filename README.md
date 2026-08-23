@@ -11,6 +11,7 @@ Built with accessibility in mind — screen-reader friendly with proper labels a
 - **HEIC input** — open and convert HEIC/HEIF photos from newer iPhones to any supported format (input only; HEIC can't be written)
 - **Resize and crop** — specify target dimensions with two modes: keep proportions or crop to exact size
 - **Multi-size ICO** — create `.ico` files with multiple embedded sizes using built-in presets or custom dimensions
+- **Complete ICO preset** — the Application Icon preset creates 16, 32, 48, 64, 72, 80, 96, 128, 256, and 512 px frames in one file
 - **Fit to file size** — give a maximum file size (and optionally a maximum width) and SIC! searches every enabled format for a combination of format, dimensions, and quality that fits, then converts to the result you pick
 - **Multiple input methods** — file dialog, folder import, drag & drop, Ctrl+V paste (files, screenshots, or URLs), download by link
 - **Clipboard detection** — optionally offers to add an image, image files, or an image link from the clipboard when the window opens or gains focus (opt-in)
@@ -19,7 +20,7 @@ Built with accessibility in mind — screen-reader friendly with proper labels a
 - **Selectable target formats** — hide the formats you never convert to from the target-format dropdown
 - **Cloud file detection** — warns about OneDrive/SharePoint placeholder files that haven't been downloaded yet
 - **CLI mode** — headless conversion from the command line, no UI needed
-- **Automatic updates** — checks for new versions in the background with Ed25519 signature verification, with adjustable frequency (or off) in Settings
+- **Offline by default** — automatic update checks are disabled by default and conversion never requires an account or network connection
 - **Portable mode** — place an empty `userdata` folder next to `Sic.exe` to keep all data alongside the executable
 - **Localized** — English, German, Spanish, French, Hebrew, Russian, Ukrainian (Hebrew runs the whole UI right-to-left)
 - **Accessible** — logical tab order, keyboard shortcuts, screen-reader friendly
@@ -109,11 +110,11 @@ sic -i avatar.png -o avatar.ico -r 128x128
 Settings are stored in `%APPDATA%\Oire\Sic\Sic.cfg` (or `userdata\Sic.cfg` in portable mode):
 
 - **Output folder** — where converted files are saved (default: `Converted` subfolder in the data directory)
-- **Save converted images in the same folder as the original** — write each converted file next to its source file instead of into the output folder; clipboard captures and downloaded links still go to the output folder (default: off)
+- **Save converted images in the same folder as the original** — write each converted file next to its source file instead of into the output folder; clipboard captures and downloaded links still go to the output folder (default: on)
 - **Language** — UI language (default: system language)
 - **Confirm exit** — warn when closing with images still in the queue (default: enabled)
-- **Check for updates on startup** — perform a single silent update check shortly after launch (default: enabled)
-- **Check for updates in the background** — how often to check for updates while running: once a day, every 3 days, once a week, once a month, or never (default: once a day)
+- **Check for updates on startup** — perform a single silent update check shortly after launch (default: disabled)
+- **Check for updates in the background** — how often to check for updates while running: once a day, every 3 days, once a week, once a month, or never (default: never)
 - **Detect images in clipboard** — offer to add an image, image files, or an image link from the clipboard when the window opens or gains focus (default: off)
 - **Target formats to show in the list** — which formats appear in the target-format dropdown (default: all)
 

@@ -90,7 +90,6 @@ partial class IcoPresetDialog {
         //
         faviconRadioButton.Text = "&Favicon";
         faviconRadioButton.AutoSize = true;
-        faviconRadioButton.Checked = true;
         faviconRadioButton.Name = "faviconRadioButton";
         faviconRadioButton.TabIndex = 0;
 
@@ -99,6 +98,7 @@ partial class IcoPresetDialog {
         //
         appIconRadioButton.Text = "Application &Icon";
         appIconRadioButton.AutoSize = true;
+        appIconRadioButton.Checked = true;
         appIconRadioButton.Name = "appIconRadioButton";
         appIconRadioButton.TabIndex = 1;
 

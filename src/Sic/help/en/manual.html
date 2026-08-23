@@ -203,7 +203,7 @@ footer {
     <li>Select the desired target format from the <strong>Target Format</strong> dropdown.</li>
     <li>Click <strong>Convert All</strong> (<kbd>Ctrl+Shift+F5</kbd>) to convert every image in the queue, or select specific images and click <strong>Convert Selected</strong> (<kbd>F5</kbd>).</li>
 </ol>
-<p>By default, converted files are saved to a <code>Converted</code> folder inside the application data directory. You can change this in <a href="#settings">Settings</a>.</p>
+<p>By default, converted files are saved next to their source image. You can change this in <a href="#settings">Settings</a>.</p>
 <p>If a file with the same name already exists, SIC! will ask you whether to overwrite, rename (by adding a <code>_1</code> suffix), or skip that file.</p>
 <p>Converting an image to the format it is already in is skipped rather than performed: re-encoding it would only lose quality for no gain, so the queue simply reports <em>Skipped (same format)</em>. If a resize is requested at the same time, the conversion does go ahead, and SIC! reapplies the original encoding quality so the image is not compressed harder than it already was.</p>
 
@@ -231,7 +231,7 @@ footer {
     <dd>Generates sizes 16, 32, 48, and 64 pixels. A favicon is the small icon displayed in browser tabs, bookmarks, and address bars. This preset covers all the sizes commonly expected by web browsers.</dd>
 
     <dt>Application icon</dt>
-    <dd>Generates sizes 16, 20, 24, 32, 40, 48, 64, and 256 pixels. This covers the full range of sizes Windows uses for application icons — from small taskbar icons to the large tiles shown in Explorer.</dd>
+    <dd>Generates sizes 16, 32, 48, 64, 72, 80, 96, 128, 256, and 512 pixels. This complete preset matches the full-size list used by this fork.</dd>
 
     <dt>Custom</dt>
     <dd>Lets you build your own list of sizes. Starts with the previously selected preset as a base, then you can add or remove individual sizes.</dd>
@@ -271,10 +271,10 @@ footer {
     <dd>When enabled (the default), SIC! asks for confirmation before closing if there are images remaining in the queue. Uncheck this option to exit without a prompt.</dd>
 
     <dt>Check for updates on startup</dt>
-    <dd>When enabled (the default), SIC! performs a single silent update check shortly after it starts. If the check cannot reach the network, it is ignored — it never interrupts startup or shows an error. Uncheck this option to skip the check at launch.</dd>
+    <dd>When enabled, SIC! performs a single silent update check shortly after it starts. It is disabled by default so the application can remain offline.</dd>
 
     <dt>Check for updates in the background</dt>
-    <dd>Choose how often SIC! checks for updates while it is running: <em>Once a day</em> (the default), <em>Every 3 days</em>, <em>Once a week</em>, <em>Once a month</em>, or <em>Never</em>. Select <em>Never</em> to turn background checks off entirely. This setting is independent of the startup check — you can have either, both, or neither. A change takes effect immediately, without restarting the application.</dd>
+    <dd>Choose how often SIC! checks for updates while it is running: <em>Once a day</em>, <em>Every 3 days</em>, <em>Once a week</em>, <em>Once a month</em>, or <em>Never</em> (the default). This setting is independent of the startup check — you can have either, both, or neither. A change takes effect immediately, without restarting the application.</dd>
 </dl>
 
 <h3>Images tab</h3>
@@ -283,7 +283,7 @@ footer {
     <dd>Set a custom folder where all converted files will be saved. Click <strong>Reset</strong> to restore the default <code>Converted</code> folder inside the application data directory.</dd>
 
     <dt>Save converted images in the same folder as the original</dt>
-    <dd>When enabled, each converted file is written next to its source file instead of into the output folder above. Images that have no source folder — clipboard captures and downloaded links — still go to the output folder. This option is off by default.</dd>
+    <dd>When enabled, each converted file is written next to its source file instead of into the output folder above. Images that have no source folder — clipboard captures and downloaded links — still go to the output folder. This option is on by default.</dd>
 
     <dt>Detect images in clipboard</dt>
     <dd>When enabled, SIC! offers to add usable clipboard content — an image, image files, or an image link — whenever its window opens or regains focus. A Yes/No prompt always asks before anything is added, and the same clipboard content is offered only once, so it never nags you. This option is off by default. See <a href="#adding-images">Adding images</a> for details.</dd>
@@ -294,7 +294,7 @@ footer {
 <p>Settings are stored in <code>Sic.cfg</code> inside the application data directory (see <a href="#installation">Installation modes</a> for the exact location).</p>
 
 <h2 id="updates">Software updates</h2>
-<p>SIC! can check for new versions automatically. By default an update check runs on startup and then once a day while the application is running, but both behaviors are configurable in <a href="#settings">Settings</a> — you can turn the startup check off and choose the background frequency (or disable background checks entirely). You can always check manually via <strong>Help > Check for Updates</strong>.</p>
+<p>SIC! can check for new versions, but both startup and background update checks are disabled by default in this fork. You can opt in through <a href="#settings">Settings</a> or check manually via <strong>Help > Check for Updates</strong>.</p>
 <p>When an update is available, SIC! shows a dialog with the new version number. You can choose to update, skip this version, or be reminded later. If you click <strong>Update</strong>, the new version is downloaded automatically. Once the download finishes, a confirmation dialog appears with <strong>Install</strong> and <strong>Cancel</strong> buttons. Clicking <strong>Install</strong> starts the installation.</p>
 
 <h2 id="cli">Command-line usage</h2>

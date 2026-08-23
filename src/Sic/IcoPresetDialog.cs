@@ -7,7 +7,7 @@ namespace Oire.Sic;
 
 public partial class IcoPresetDialog: Form {
     private static readonly uint[] FaviconSizes = [16, 32, 48, 64];
-    private static readonly uint[] AppIconSizes = [16, 20, 24, 32, 40, 48, 64, 256];
+    private static readonly uint[] AppIconSizes = [16, 32, 48, 64, 72, 80, 96, 128, 256, 512];
 
     private readonly List<uint> _customSizes = [];
 
@@ -34,7 +34,7 @@ public partial class IcoPresetDialog: Form {
         removeSizeButton.Click += RemoveSizeButton_Click;
         sizesListBox.SelectedIndexChanged += SizesListBox_SelectedIndexChanged;
 
-        PopulateSizesList(FaviconSizes);
+        PopulateSizesList(AppIconSizes);
     }
 
     private void PresetRadioButton_CheckedChanged(object? sender, EventArgs e) {

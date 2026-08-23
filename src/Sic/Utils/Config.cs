@@ -20,8 +20,8 @@ public class Config {
         /// <summary>When <c>true</c>, converted files are written next to their source file
         /// instead of into <see cref="OutputFolder"/> (issue #33). Items that have no source
         /// folder — clipboard captures and downloaded links — still fall back to
-        /// <see cref="OutputFolder"/>. Opt-in; off by default.</summary>
-        public bool SaveToSourceFolder { get; set; }
+        /// <see cref="OutputFolder"/>.</summary>
+        public bool SaveToSourceFolder { get; set; } = true;
 
         public string LastInputFolder { get; set; } = "";
         public bool ConfirmExitWithQueue { get; set; } = true;
@@ -29,7 +29,7 @@ public class Config {
         /// <summary>When <c>true</c>, the app performs a single silent update check shortly
         /// after the main window opens. A check that fails (no network, server down) is
         /// logged and otherwise ignored — it never interrupts startup or shows an error.</summary>
-        public bool CheckForUpdatesOnStartup { get; set; } = true;
+        public bool CheckForUpdatesOnStartup { get; set; }
 
         /// <summary>When <c>true</c>, SIC! offers (via a prompt) to add usable clipboard
         /// content — raw image data, image files, or an image link — whenever the window opens
@@ -52,7 +52,7 @@ public class Config {
         /// <summary>How often the app checks for updates in the background while it runs.
         /// <see cref="UpdateCheckInterval.Never"/> disables the background loop. Independent of
         /// <see cref="CheckForUpdatesOnStartup"/>: either, both, or neither may be active.</summary>
-        public UpdateCheckInterval UpdateCheckInterval { get; set; } = UpdateCheckInterval.Daily;
+        public UpdateCheckInterval UpdateCheckInterval { get; set; } = UpdateCheckInterval.Never;
     }
 
     #endregion

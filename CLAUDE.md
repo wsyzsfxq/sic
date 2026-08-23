@@ -105,7 +105,7 @@ Tab page `Text` doesn't honor `&` mnemonics — navigate tabs with Ctrl+Tab / Ct
 - `Constants/App.cs` — Application metadata, data folder paths (`%APPDATA%/Oire/Sic/`), file extensions.
 - `Constants/ExitCode.cs` — CLI exit code constants (`Success`, `Error`, `Canceled`).
 - `Constants/Logging.cs` — Log file paths and output templates. Logs go to `%APPDATA%/Oire/Sic/logs/`.
-- `Enums/UpdateCheckInterval.cs` — Background update-check frequency (`Daily`, `EveryThreeDays`, `Weekly`, `Monthly`, `Never`). Declared most-frequent-first so `Daily` is the default zero value and the order matches the Settings combo box.
+- `Enums/UpdateCheckInterval.cs` — Background update-check frequency (`Daily`, `EveryThreeDays`, `Weekly`, `Monthly`, `Never`). The configuration explicitly defaults to `Never` in this fork.
 
 ### Key dependencies
 
@@ -145,7 +145,7 @@ SIC! is an accessible image format converter primarily aimed at blind and low-co
 3. **Pick target format** from a dropdown (JPG, PNG, WEBP, ICO, BMP, TIFF, GIF, AVIF).
 4. **Optional resize** — checkbox that reveals width/height fields (critical for blind users who get told "upload a 128x128 photo").
 5. **Hit Convert** — processes all items in the list to the chosen format.
-6. **Output location** — by default, `%APPDATA%\Oire\Sic\Converted\` (or `userdata\Converted\` in portable mode), same name with new extension. Configurable in settings to use a custom output folder.
+6. **Output location** — by default, files are saved next to their source image. Clipboard and URL inputs fall back to `%APPDATA%\Oire\Sic\Converted\` (or `userdata\Converted\` in portable mode).
 7. **Filename conflict** — always ask (overwrite / rename to `_1` suffix / skip). Never silently overwrite.
 
 ### UI guidelines
@@ -161,11 +161,11 @@ SIC! is an accessible image format converter primarily aimed at blind and low-co
 ### Settings (via SharpConfig, stored in `%APPDATA%/Oire/Sic/Sic.cfg`)
 
 - Output folder (default: `Converted` subfolder in the data directory)
-- Save converted images in the same folder as the original (`SaveToSourceFolder`, default: off) — when on, each converted file is written next to its source file instead of into the output folder (issue #33). Clipboard captures and downloaded links have no source folder, so they still go to the output folder.
+- Save converted images in the same folder as the original (`SaveToSourceFolder`, default: on) — each converted file is written next to its source file instead of into the output folder (issue #33). Clipboard captures and downloaded links have no source folder, so they still go to the output folder.
 - Language
 - Confirm exit when images are in the queue
-- Check for updates on startup (default: enabled) — a single silent check shortly after launch
-- Background update-check frequency (`UpdateCheckInterval`: Daily / EveryThreeDays / Weekly / Monthly / Never; default Daily)
+- Check for updates on startup (default: disabled) — opt-in in this fork
+- Background update-check frequency (`UpdateCheckInterval`: Daily / EveryThreeDays / Weekly / Monthly / Never; default Never)
 - Detect data in clipboard (`DetectClipboardData`, default: off) — when on, SIC! offers (via a Yes/No prompt) to add usable clipboard content (raw image, image files, or an image link) when the window opens or regains focus. Deduplicated by the Win32 clipboard sequence number so the same payload is offered at most once.
 - Target formats to show (`EnabledFormats`, default: empty = all) — comma-separated list of format keys to display in the target-format dropdown, letting users hide formats they never convert to (issue #47). Empty means every supported format; at least one must stay selected.
 
