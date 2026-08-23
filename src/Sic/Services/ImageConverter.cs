@@ -419,8 +419,15 @@ public static class ImageConverter {
         return newPath;
     }
 
-    public static void CreateMultiSizeIco(ImageItem item, string outputPath, uint[] sizes) {
+    public static void CreateMultiSizeIco(ImageItem item, string outputPath, uint[] sizes, bool removeSolidBackground = false, double backgroundTolerance = 8) {
         using var source = LoadMagickImage(item);
+
+        if (removeSolidBackground) {
+            using var pixels = source.GetPixels();
+            var backgroundColor = pixels.GetPixel(0, 0).ToColor();
+            source.ColorFuzz = new Percentage(Math.Clamp(backgroundTolerance, 0, 100));
+            source.Transparent(backgroundColor);
+        }
 
         using var collection = new MagickImageCollection();
 
@@ -434,7 +441,13 @@ public static class ImageConverter {
         }
 
         collection.Write(outputPath, MagickFormat.Ico);
-        Log.Information("Created multi-size ICO from {FileName} at {OutputPath} with sizes {Sizes}", item.FileName, outputPath, string.Join(", ", sizes));
+        Log.Information(
+            "Created multi-size ICO from {FileName} at {OutputPath} with sizes {Sizes}; solid background removal: {RemoveSolidBackground}, tolerance: {BackgroundTolerance}%",
+            item.FileName,
+            outputPath,
+            string.Join(", ", sizes),
+            removeSolidBackground,
+            backgroundTolerance);
     }
 
     /// <summary>

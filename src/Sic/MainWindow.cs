@@ -595,6 +595,8 @@ public partial class MainWindow: Form {
             return;
 
         var sizes = presetDialog.SelectedSizes;
+        var removeSolidBackground = presetDialog.RemoveSolidBackground;
+        var backgroundTolerance = presetDialog.BackgroundTolerance;
         var index = imageListView.SelectedIndices[0];
         var item = _imageItems[index];
         var outputFolder = ValidateOutputFolder();
@@ -631,7 +633,7 @@ public partial class MainWindow: Form {
                     Directory.CreateDirectory(dir);
                 }
 
-                ImageConverter.CreateMultiSizeIco(item, outputPath, sizes);
+                ImageConverter.CreateMultiSizeIco(item, outputPath, sizes, removeSolidBackground, backgroundTolerance);
             }).WaitAsync(progressDialog.CancellationToken);
 
             imageListView.SelectedIndices.Clear();

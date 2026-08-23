@@ -21,6 +21,10 @@ public partial class IcoPresetDialog: Form {
         }
     }
 
+    public bool RemoveSolidBackground => removeBackgroundCheckBox.Checked;
+
+    public double BackgroundTolerance => (double)backgroundToleranceNumericUpDown.Value;
+
     public IcoPresetDialog() {
         InitializeComponent();
         Localizer.Localize(this, Localization.Catalog);
@@ -33,8 +37,10 @@ public partial class IcoPresetDialog: Form {
         addSizeButton.Click += AddSizeButton_Click;
         removeSizeButton.Click += RemoveSizeButton_Click;
         sizesListBox.SelectedIndexChanged += SizesListBox_SelectedIndexChanged;
+        removeBackgroundCheckBox.CheckedChanged += RemoveBackgroundCheckBox_CheckedChanged;
 
         PopulateSizesList(AppIconSizes);
+        UpdateBackgroundRemovalControls();
     }
 
     private void PresetRadioButton_CheckedChanged(object? sender, EventArgs e) {
@@ -111,6 +117,17 @@ public partial class IcoPresetDialog: Form {
         if (customRadioButton.Checked) {
             removeSizeButton.Enabled = sizesListBox.SelectedIndex >= 0;
         }
+    }
+
+    private void RemoveBackgroundCheckBox_CheckedChanged(object? sender, EventArgs e) {
+        UpdateBackgroundRemovalControls();
+    }
+
+    private void UpdateBackgroundRemovalControls() {
+        var enabled = removeBackgroundCheckBox.Checked;
+        backgroundToleranceLabel.Enabled = enabled;
+        backgroundToleranceNumericUpDown.Enabled = enabled;
+        backgroundTolerancePercentLabel.Enabled = enabled;
     }
 
     protected override void OnFormClosing(FormClosingEventArgs e) {

@@ -12,6 +12,7 @@ Built with accessibility in mind — screen-reader friendly with proper labels a
 - **Resize and crop** — specify target dimensions with two modes: keep proportions or crop to exact size
 - **Multi-size ICO** — create `.ico` files with multiple embedded sizes using built-in presets or custom dimensions
 - **Complete ICO preset** — the Application Icon preset creates 16, 32, 48, 64, 72, 80, 96, 128, 256, and 512 px frames in one file
+- **Solid-background transparency** — optionally uses the top-left pixel as a background color and removes matching colors with an adjustable tolerance when creating a multi-size ICO
 - **Fit to file size** — give a maximum file size (and optionally a maximum width) and SIC! searches every enabled format for a combination of format, dimensions, and quality that fits, then converts to the result you pick
 - **Multiple input methods** — file dialog, folder import, drag & drop, Ctrl+V paste (files, screenshots, or URLs), download by link
 - **Clipboard detection** — optionally offers to add an image, image files, or an image link from the clipboard when the window opens or gains focus (opt-in)
