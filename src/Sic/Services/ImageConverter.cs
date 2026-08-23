@@ -424,7 +424,8 @@ public static class ImageConverter {
 
         if (removeSolidBackground) {
             using var pixels = source.GetPixels();
-            var backgroundColor = pixels.GetPixel(0, 0).ToColor();
+            var backgroundColor = pixels.GetPixel(0, 0).ToColor()
+                ?? throw new InvalidOperationException("Unable to read the top-left background color.");
             source.ColorFuzz = new Percentage(Math.Clamp(backgroundTolerance, 0, 100));
             source.Transparent(backgroundColor);
         }
