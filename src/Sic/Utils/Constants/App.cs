@@ -13,7 +13,10 @@ public static class App {
             ManufacturerNameShort,
             Name
         );
-    public static readonly string DefaultOutputFolder = Path.Combine(DataFolder, "Converted");
+    private static readonly string DocumentsFolder = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+    public static readonly string DefaultOutputFolder = string.IsNullOrWhiteSpace(DocumentsFolder)
+        ? Path.Combine(DataFolder, "Converted")
+        : Path.Combine(DocumentsFolder, "SIC 输出");
     public const string RepoUrl = "https://github.com/Oire/sic";
     public const string AppcastUrl = "https://sic.oire.dev/appcast.xml";
     public const string UpdatePublicKey = "1Q9hfqwf3i6ZcncHvt08rqAO17iDrhHTvrjHAdCXw68=";

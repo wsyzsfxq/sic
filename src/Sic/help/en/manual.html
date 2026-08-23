@@ -169,7 +169,7 @@ footer {
 <p>SIC! can run in two modes:</p>
 <dl>
     <dt>Installer (default)</dt>
-    <dd>When installed normally, SIC! stores its configuration, converted files, and logs in <code>%APPDATA%\Oire\Sic\</code>. The default output folder is <code>%APPDATA%\Oire\Sic\Converted\</code>.</dd>
+    <dd>When installed normally, SIC! stores its configuration and logs in <code>%APPDATA%\Oire\Sic\</code>. The default output folder is <code>SIC 输出</code> inside the Windows Documents folder.</dd>
 
     <dt>Portable</dt>
     <dd>If a <code>userdata</code> folder exists next to the executable, SIC! runs in portable mode. All data (configuration, converted files, logs) is stored in that <code>userdata</code> folder instead of <code>%APPDATA%</code>. This lets you run SIC! from a USB drive or any folder without leaving traces on the system.</dd>
@@ -281,10 +281,10 @@ footer {
 <h3>Images tab</h3>
 <dl>
     <dt>Output folder</dt>
-    <dd>Set a custom folder where all converted files will be saved. Click <strong>Reset</strong> to restore the default <code>Converted</code> folder inside the application data directory.</dd>
+    <dd>Choose any folder where converted files will be saved. Click <strong>Reset</strong> to restore the default <code>SIC 输出</code> folder inside the Windows Documents folder.</dd>
 
     <dt>Save converted images in the same folder as the original</dt>
-    <dd>When enabled, each converted file is written next to its source file instead of into the output folder above. Images that have no source folder — clipboard captures and downloaded links — still go to the output folder. This option is on by default.</dd>
+    <dd>When enabled, each converted file is written next to its source file instead of into the output folder above. Images that have no source folder — clipboard captures and downloaded links — still go to the output folder. This option is off by default so the selected output folder is used.</dd>
 
     <dt>Detect images in clipboard</dt>
     <dd>When enabled, SIC! offers to add usable clipboard content — an image, image files, or an image link — whenever its window opens or regains focus. A Yes/No prompt always asks before anything is added, and the same clipboard content is offered only once, so it never nags you. This option is off by default. See <a href="#adding-images">Adding images</a> for details.</dd>

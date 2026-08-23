@@ -21,7 +21,7 @@ public class Config {
         /// instead of into <see cref="OutputFolder"/> (issue #33). Items that have no source
         /// folder — clipboard captures and downloaded links — still fall back to
         /// <see cref="OutputFolder"/>.</summary>
-        public bool SaveToSourceFolder { get; set; } = true;
+        public bool SaveToSourceFolder { get; set; }
 
         public string LastInputFolder { get; set; } = "";
         public bool ConfirmExitWithQueue { get; set; } = true;

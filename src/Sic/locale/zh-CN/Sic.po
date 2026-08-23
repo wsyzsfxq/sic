@@ -1,0 +1,592 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Sic\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "...and {0} more"
+msgstr "……以及另外 {0} 个"
+
+msgid "{0} — {1}, full quality — {2}"
+msgstr "{0} — {1}，最高质量 — {2}"
+
+msgid "{0} — {1}, quality {2}% — {3}"
+msgstr "{0} — {1}，质量 {2}% — {3}"
+
+msgid "{0} (recommended)"
+msgstr "{0}（推荐）"
+
+msgid "{0} cloud-only file skipped"
+msgid_plural "{0} cloud-only files skipped"
+msgstr[0] "已跳过 {0} 个仅存于云端的文件"
+
+msgid "{0} converted"
+msgstr "已转换 {0} 个"
+
+msgid "{0} failed"
+msgstr "{0} 个失败"
+
+msgid "{0} file failed to load"
+msgid_plural "{0} files failed to load"
+msgstr[0] "{0} 个文件加载失败"
+
+msgid "{0} image loaded"
+msgid_plural "{0} images loaded"
+msgstr[0] "已加载 {0} 张图片"
+
+msgid "{0} skipped"
+msgstr "已跳过 {0} 个"
+
+msgid "&About SIC!..."
+msgstr "关于 SIC!(&A)…"
+
+msgid "&Add..."
+msgstr "添加(&A)…"
+
+msgid "&Browse..."
+msgstr "浏览(&B)…"
+
+msgid "&Cancel"
+msgstr "取消(&C)"
+
+msgid "&Convert"
+msgstr "转换(&C)"
+
+msgid "&Copy Info"
+msgstr "复制信息(&C)"
+
+msgid "&Crop"
+msgstr "裁剪(&C)"
+
+msgid "&Detect images in clipboard"
+msgstr "检测剪贴板中的图片(&D)"
+
+msgid "&Donate..."
+msgstr "捐赠(&D)…"
+
+msgid "&Edit"
+msgstr "编辑(&E)"
+
+msgid "&Favicon"
+msgstr "网站图标(&F)"
+
+msgid "&File"
+msgstr "文件(&F)"
+
+msgid "&Fit to File Size..."
+msgstr "压缩到指定大小(&F)…"
+
+msgid "&Folder:"
+msgstr "文件夹(&F)："
+
+msgid "&Height:"
+msgstr "高度(&H)："
+
+msgid "&Help"
+msgstr "帮助(&H)"
+
+msgid "&Keep proportions"
+msgstr "保持比例(&K)"
+
+msgid "&Language:"
+msgstr "语言(&L)："
+
+msgid "&Limit width (keeps proportions)"
+msgstr "限制宽度（保持比例）(&L)"
+
+msgid "&Link:"
+msgstr "链接(&L)："
+
+msgid "&OK"
+msgstr "确定(&O)"
+
+msgid "&Remove"
+msgstr "移除(&R)"
+
+msgid "&Reset"
+msgstr "恢复默认(&R)"
+
+msgid "&Save converted images in the same folder as the original"
+msgstr "保存到原图所在文件夹（会覆盖上方自选输出位置）(&S)"
+
+msgid "&Settings..."
+msgstr "设置(&S)…"
+
+msgid "&Target formats to show in the list"
+msgstr "列表中显示的目标格式(&T)"
+
+msgid "&Width:"
+msgstr "宽度(&W)："
+
+msgid "1 image in queue"
+msgid_plural "{0} images in queue"
+msgstr[0] "队列中有 {0} 张图片"
+
+msgid "About SIC!"
+msgstr "关于 SIC!"
+
+msgid "Add &Image..."
+msgstr "添加图片(&I)…"
+
+msgid "Add F&older..."
+msgstr "添加文件夹(&O)…"
+
+msgid "Add Folder"
+msgstr "添加文件夹"
+
+msgid "Add Image by &Link..."
+msgstr "通过链接添加图片(&L)…"
+
+msgid "Add Image by Link"
+msgstr "通过链接添加图片"
+
+msgid "Add Images"
+msgstr "添加图片"
+
+msgid "Add Size"
+msgstr "添加尺寸"
+
+msgid "Add your images here"
+msgstr "在这里添加图片"
+
+msgid "Added {0} from URL"
+msgstr "已从网址添加 {0}"
+
+msgid "Added image from clipboard"
+msgstr "已从剪贴板添加图片"
+
+msgid "All files"
+msgstr "所有文件"
+
+msgid "All supported images"
+msgstr "所有支持的图片"
+
+msgid "Application &Icon"
+msgstr "应用程序图标(&I)"
+
+msgid "C&hoose a result to convert to:"
+msgstr "选择一个转换结果(&H)："
+
+msgid "C&ustom"
+msgstr "自定义(&U)"
+
+msgid "Cancelled."
+msgstr "已取消。"
+
+msgid "Check for &updates on startup"
+msgstr "启动时检查更新(&U)"
+
+msgid "Check for &Updates..."
+msgstr "检查更新(&U)…"
+
+msgid "Check for updates in the back&ground:"
+msgstr "后台检查更新频率(&G)："
+
+msgid "Checking {0} ({1}/{2})..."
+msgstr "正在检查 {0}（{1}/{2}）…"
+
+msgid "Clipboard Content Detected"
+msgstr "检测到剪贴板内容"
+
+msgid "Cloud Files"
+msgstr "云端文件"
+
+msgid "Con&vert"
+msgstr "转换(&V)"
+
+msgid "Confirm Exit"
+msgstr "确认退出"
+
+msgid "Confirm on exit with non-empty &queue"
+msgstr "队列不为空时确认退出(&Q)"
+
+msgid "Conversion Complete"
+msgstr "转换完成"
+
+msgid "Conversion Error"
+msgstr "转换错误"
+
+msgid "Conversion failed: {0}"
+msgstr "转换失败：{0}"
+
+msgid "Convert &All"
+msgstr "全部转换(&A)"
+
+msgid "Convert &Selected"
+msgstr "转换选中项(&S)"
+
+msgid "Converted: {0}"
+msgstr "已转换：{0}"
+
+msgid "Converting {0} ({1}/{2})..."
+msgstr "正在转换 {0}（{1}/{2}）…"
+
+msgid "Converting..."
+msgstr "正在转换…"
+
+msgid "Copied!"
+msgstr "已复制！"
+
+msgid "Create Multi-size &ICO..."
+msgstr "生成多尺寸 ICO(&I)…"
+
+msgid "Create Multi-size ICO"
+msgstr "生成多尺寸 ICO"
+
+msgid "Creating multi-size ICO..."
+msgstr "正在生成多尺寸 ICO…"
+
+msgid "Crop mode requires a valid height (1–65535)."
+msgstr "裁剪模式需要有效高度（1–65535）。"
+
+msgid "Crop mode requires a valid width (1–65535)."
+msgstr "裁剪模式需要有效宽度（1–65535）。"
+
+msgid "Dimensions"
+msgstr "尺寸"
+
+msgid "Downloading image..."
+msgstr "正在下载图片…"
+
+msgid "Downloading image... ({0} KB)"
+msgstr "正在下载图片…（{0} KB）"
+
+msgid "Downloading image... {0}%"
+msgstr "正在下载图片… {0}%"
+
+msgid "Downloading..."
+msgstr "正在下载…"
+
+msgid "E&xit"
+msgstr "退出(&X)"
+
+msgid "Error"
+msgstr "错误"
+
+msgid "Errors:"
+msgstr "错误："
+
+msgid "Every 3 days"
+msgstr "每 3 天"
+
+msgid "Existing size"
+msgstr "尺寸已存在"
+
+msgid "Failed"
+msgstr "失败"
+
+msgid "Fatal error: {0}"
+msgstr "严重错误：{0}"
+
+msgid "Fi&lter:"
+msgstr "筛选(&L)："
+
+msgid "File Already Exists"
+msgstr "文件已存在"
+
+msgid "File Name"
+msgstr "文件名"
+
+msgid "File not found: {0}"
+msgstr "找不到文件：{0}"
+
+msgid "Fit to File Size"
+msgstr "压缩到指定大小"
+
+msgid "Fit to File Size — Results"
+msgstr "压缩到指定大小 — 结果"
+
+msgid "Fitting..."
+msgstr "正在压缩…"
+
+msgid "Folder Not Found"
+msgstr "找不到文件夹"
+
+msgid "Format"
+msgstr "格式"
+
+msgid "General"
+msgstr "常规"
+
+msgid "GitHub Repository"
+msgstr "GitHub 仓库"
+
+msgid "ICO Created"
+msgstr "ICO 已生成"
+
+msgid "Image converted successfully:\n{0}"
+msgstr "图片转换成功：\n{0}"
+
+msgid "Image files"
+msgstr "图片文件"
+
+msgid "Images"
+msgstr "图片"
+
+msgid "Include &All Subfolders"
+msgstr "包含所有子文件夹(&A)"
+
+msgid "Invalid dimensions"
+msgstr "尺寸无效"
+
+msgid "Invalid height"
+msgstr "高度无效"
+
+msgid "Invalid height value: {0}"
+msgstr "高度值无效：{0}"
+
+msgid "Invalid link"
+msgstr "链接无效"
+
+msgid "Invalid size"
+msgstr "文件大小无效"
+
+msgid "Invalid Size"
+msgstr "尺寸无效"
+
+msgid "Invalid width"
+msgstr "宽度无效"
+
+msgid "Invalid width value: {0}"
+msgstr "宽度值无效：{0}"
+
+msgid "Loading images ({0}/{1})..."
+msgstr "正在加载图片（{0}/{1}）…"
+
+msgid "Loading..."
+msgstr "正在加载…"
+
+msgid "Looking for the best fit..."
+msgstr "正在寻找最佳压缩方案…"
+
+msgid "Maximum &width (px):"
+msgstr "最大宽度（像素）(&W)："
+
+msgid "Maximum file size (&KB):"
+msgstr "最大文件大小（KB）(&K)："
+
+msgid "Multi-size ICO created successfully:\n{0}"
+msgstr "多尺寸 ICO 生成成功：\n{0}"
+
+msgid "Multi-size ICO created: {0}"
+msgstr "多尺寸 ICO 已生成：{0}"
+
+msgid "Never"
+msgstr "从不"
+
+msgid "No fit found"
+msgstr "没有合适方案"
+
+msgid "No folder selected"
+msgstr "未选择文件夹"
+
+msgid "No format selected"
+msgstr "未选择格式"
+
+msgid "No Formats Selected"
+msgstr "未选择任何格式"
+
+msgid "No images found"
+msgstr "未找到图片"
+
+msgid "No images to convert. Add some images first."
+msgstr "没有可转换的图片，请先添加图片。"
+
+msgid "No link entered"
+msgstr "未输入链接"
+
+msgid "No matching images found in the selected folder."
+msgstr "所选文件夹中没有找到匹配的图片。"
+
+msgid "No Sizes"
+msgstr "没有尺寸"
+
+msgid "Nothing to convert"
+msgstr "没有可转换内容"
+
+msgid "Once a day"
+msgstr "每天一次"
+
+msgid "Once a month"
+msgstr "每月一次"
+
+msgid "Once a week"
+msgstr "每周一次"
+
+msgid "Output &Folder:"
+msgstr "输出文件夹(&F)："
+
+msgid "Output Folder Not Found"
+msgstr "找不到输出文件夹"
+
+msgid "Overwrite"
+msgstr "覆盖"
+
+msgid "Please add at least one size to the list."
+msgstr "请至少向列表中添加一个尺寸。"
+
+msgid "Please enter a link."
+msgstr "请输入链接。"
+
+msgid "Please enter a maximum file size in KB (a whole number of at least 1)."
+msgstr "请输入以 KB 为单位的最大文件大小（不小于 1 的整数）。"
+
+msgid "Please enter a number between {0} and {1}."
+msgstr "请输入 {0} 到 {1} 之间的数字。"
+
+msgid "Please enter a valid link starting with http:// or https://."
+msgstr "请输入以 http:// 或 https:// 开头的有效链接。"
+
+msgid "Please enter a valid maximum width (1–{0})."
+msgstr "请输入有效的最大宽度（1–{0}）。"
+
+msgid "Please enter at least one valid dimension (1–65535)."
+msgstr "请至少输入一个有效尺寸（1–65535）。"
+
+msgid "Please select a folder."
+msgstr "请选择文件夹。"
+
+msgid "Please select a target format."
+msgstr "请选择目标格式。"
+
+msgid "Please show at least one target format."
+msgstr "请至少显示一种目标格式。"
+
+msgid "Please wait..."
+msgstr "请稍候…"
+
+msgid "Pre&set:"
+msgstr "预设(&S)："
+
+msgid "Preparing to convert..."
+msgstr "正在准备转换…"
+
+msgid "Processed {0} image."
+msgid_plural "Processed {0} images."
+msgstr[0] "已处理 {0} 张图片。"
+
+msgid "Read User &Manual"
+msgstr "阅读用户手册(&M)"
+
+msgid "Ready"
+msgstr "就绪"
+
+msgid "Remove &All"
+msgstr "全部移除(&A)"
+
+msgid "Rename"
+msgstr "重命名"
+
+msgid "Resi&ze"
+msgstr "调整尺寸(&Z)"
+
+msgid "Resize &Mode:"
+msgstr "调整模式(&M)："
+
+msgid "Select folder containing images"
+msgstr "选择包含图片的文件夹"
+
+msgid "Select images to add"
+msgstr "选择要添加的图片"
+
+msgid "Select output folder for converted images"
+msgstr "选择转换后图片的输出文件夹"
+
+msgid "Settings"
+msgstr "设置"
+
+msgid "Si&ze (16–512):"
+msgstr "尺寸（16–512）(&Z)："
+
+msgid "Si&zes:"
+msgstr "尺寸(&Z)："
+
+msgid "SIC! — Simple Image Converter"
+msgstr "SIC! — 简单图片转换器"
+
+msgid "Size"
+msgstr "大小"
+
+msgid "Size {0} is already in the list."
+msgstr "尺寸 {0} 已在列表中。"
+
+msgid "Skip"
+msgstr "跳过"
+
+msgid "Skipped"
+msgstr "已跳过"
+
+msgid "Skipped (same format)"
+msgstr "已跳过（格式相同）"
+
+msgid "Skipped: {0} is already in {1} format."
+msgstr "已跳过：{0} 已经是 {1} 格式。"
+
+msgid "Software Update"
+msgstr "软件更新"
+
+msgid "Status"
+msgstr "状态"
+
+msgid "Supported formats: {0}"
+msgstr "支持的格式：{0}"
+
+msgid "System"
+msgstr "跟随系统"
+
+msgid "Target &Format:"
+msgstr "目标格式(&F)："
+
+msgid "The clipboard contains an image file. Add it to the queue?"
+msgstr "剪贴板中有一个图片文件，是否添加到队列？"
+
+msgid "The clipboard contains an image. Add it to the queue?"
+msgstr "剪贴板中有一张图片，是否添加到队列？"
+
+msgid "The selected folder does not exist. Please choose an existing folder."
+msgstr "所选文件夹不存在，请选择已有文件夹。"
+
+msgid "The user manual file could not be found."
+msgstr "找不到用户手册文件。"
+
+msgid "There are images in the queue. Are you sure you want to exit?"
+msgstr "队列中还有图片，确定要退出吗？"
+
+msgid "Unable to check for updates. Please try again later."
+msgstr "无法检查更新，请稍后重试。"
+
+msgid "Unable to load configuration: {0}"
+msgstr "无法加载配置：{0}"
+
+msgid "Unable to save configuration: {0}"
+msgstr "无法保存配置：{0}"
+
+msgid "Unable to start the program up. Please contact the developer."
+msgstr "程序无法启动，请联系开发者。"
+
+msgid "Unsupported format: {0}"
+msgstr "不支持的格式：{0}"
+
+msgid "Use crop mode (scale to cover, then center-crop to exact dimensions)"
+msgstr "使用裁剪模式（缩放覆盖后从中心裁剪到准确尺寸）"
+
+msgid "User Manual"
+msgstr "用户手册"
+
+msgid "Version"
+msgstr "版本"
+
+msgid "Version {0}"
+msgstr "版本 {0}"
+
+msgid "Your current version is up to date."
+msgstr "当前已是最新版本。"
+
+msgid "Make solid &background transparent (top-left color)"
+msgstr "将纯色背景设为透明（取左上角颜色）(&B)"
+
+msgid "&Tolerance:"
+msgstr "容差(&T)："

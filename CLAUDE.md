@@ -145,7 +145,7 @@ SIC! is an accessible image format converter primarily aimed at blind and low-co
 3. **Pick target format** from a dropdown (JPG, PNG, WEBP, ICO, BMP, TIFF, GIF, AVIF).
 4. **Optional resize** — checkbox that reveals width/height fields (critical for blind users who get told "upload a 128x128 photo").
 5. **Hit Convert** — processes all items in the list to the chosen format.
-6. **Output location** — by default, files are saved next to their source image. Clipboard and URL inputs fall back to `%APPDATA%\Oire\Sic\Converted\` (or `userdata\Converted\` in portable mode).
+6. **Output location** — by default, files are saved to `SIC 输出` in the Windows Documents folder. The user can choose any output folder in Settings or opt into saving next to each source image.
 7. **Filename conflict** — always ask (overwrite / rename to `_1` suffix / skip). Never silently overwrite.
 
 ### UI guidelines
@@ -160,8 +160,8 @@ SIC! is an accessible image format converter primarily aimed at blind and low-co
 
 ### Settings (via SharpConfig, stored in `%APPDATA%/Oire/Sic/Sic.cfg`)
 
-- Output folder (default: `Converted` subfolder in the data directory)
-- Save converted images in the same folder as the original (`SaveToSourceFolder`, default: on) — each converted file is written next to its source file instead of into the output folder (issue #33). Clipboard captures and downloaded links have no source folder, so they still go to the output folder.
+- Output folder (default: `SIC 输出` in the Windows Documents folder; user-selectable)
+- Save converted images in the same folder as the original (`SaveToSourceFolder`, default: off) — when enabled, each converted file is written next to its source file instead of into the output folder (issue #33). Clipboard captures and downloaded links have no source folder, so they still go to the output folder.
 - Language
 - Confirm exit when images are in the queue
 - Check for updates on startup (default: disabled) — opt-in in this fork

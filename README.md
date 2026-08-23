@@ -110,8 +110,8 @@ sic -i avatar.png -o avatar.ico -r 128x128
 
 Settings are stored in `%APPDATA%\Oire\Sic\Sic.cfg` (or `userdata\Sic.cfg` in portable mode):
 
-- **Output folder** — where converted files are saved (default: `Converted` subfolder in the data directory)
-- **Save converted images in the same folder as the original** — write each converted file next to its source file instead of into the output folder; clipboard captures and downloaded links still go to the output folder (default: on)
+- **Output folder** — choose any folder for converted files (default: `SIC 输出` inside the Windows Documents folder)
+- **Save converted images in the same folder as the original** — optionally write each converted file next to its source file instead of into the selected output folder (default: off)
 - **Language** — UI language (default: system language)
 - **Confirm exit** — warn when closing with images still in the queue (default: enabled)
 - **Check for updates on startup** — perform a single silent update check shortly after launch (default: disabled)
